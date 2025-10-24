@@ -1,0 +1,1 @@
+# This file will trigger to all the files in 'components' folder.

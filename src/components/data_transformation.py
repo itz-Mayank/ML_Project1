@@ -1,0 +1,1 @@
+# Data transformation is used for transforming the categorical and the numerical data, like performing the One Hot Encoding.

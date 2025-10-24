@@ -1,4 +1,5 @@
 # I am able to build my entire machine learning application and i can deploy in pypi
+# setup.py is a Python packaging file used when you want to create, distribute, or install your own Python project as a package.
 from setuptools import find_packages,setup
 from typing import List
 
