@@ -110,7 +110,7 @@ python src/components/data_transformation.py
 
 # Step 5: Run Model Training (when implemented)
 python src/components/model_trainer.py
-
+```
 ---
 
 ## Deployment (Planned)
