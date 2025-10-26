@@ -15,6 +15,7 @@ To build a **machine learning pipeline** that can:
 ---
 
 ## Project Structure
+```bash
 ML_Project_1/
 │
 ├── artifacts/                     # Stores serialized models and processed data
@@ -54,7 +55,7 @@ ML_Project_1/
 ├── requirements.txt               # Required dependencies
 ├── setup.py                       # Package configuration
 └── README.md
-
+```
 
 ---
 
