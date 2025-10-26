@@ -1,12 +1,15 @@
 # Reading the data from any sources like Database(MOngoDB, SQL, Excel, etc).
 import os
 import sys
-from src.exception import CustomException
-from src.logger import logging
+
 import pandas as pd
 
+from src.exception import CustomException
+from src.logger import logging
+from src.components.data_transformation import DataTransformation,DataTransformationConfig
+
 from sklearn.model_selection import train_test_split
-from dataclasses import dataclass # used to create class variables
+from dataclasses import dataclass # The @dataclass decorator is mainly used to create classes that are primarily used to store data ("data containers") in a clean and concise way.
 
 @dataclass
 class DataIngestionConfig: # defining the class variables
@@ -50,4 +53,7 @@ class DataIngestion:
         
 if __name__ == "__main__":
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data,test_data = obj.initiate_data_ingestion()
+    
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
