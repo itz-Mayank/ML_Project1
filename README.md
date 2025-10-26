@@ -149,7 +149,7 @@ python src/components/model_trainer.py
 **Mayank Meghwal**  
 *Data Scientist | Machine Learning Engineer*  
 
-**Email:** techie@techedu.com  
+**Email:** mayankmeg207@gmail.com
 **GitHub:** [itz-Mayank](https://github.com/itz-Mayank)
 
 ---
