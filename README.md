@@ -138,16 +138,16 @@ python src/components/model_trainer.py
 
 ## Utilities
 
-- **Custom Logging:** Provides detailed tracking of every step in the ML workflow  
-- **Custom Exception Handling:** Ensures robust and clean error management  
-- **Reusable Pipelines:** Modularized preprocessing and model training pipelines for flexibility  
+- **Custom Logging:** Provides detailed tracking of every step in the ML workflow
+- **Custom Exception Handling:** Ensures robust and clean error management
+- **Reusable Pipelines:** Modularized preprocessing and model training pipelines for flexibility
 
 ---
 
 ## Author
 
-**Mayank Meghwal**  
-*Data Scientist | Machine Learning Engineer*  
+**Mayank Meghwal**
+*Data Scientist | Machine Learning Engineer*
 
 **Email:** mayankmeg207@gmail.com
 **GitHub:** [itz-Mayank](https://github.com/itz-Mayank)
