@@ -52,8 +52,8 @@ class DataTransformation:
             
             
             # Combining both categorical and numerical feature using ColumnsTransformer
-            logging.info(f"Numerical columns: {categorical_columns}")
-            logging.info(f"Categorical columns: {numerical_columns}")
+            logging.info(f"Numerical columns: {numerical_columns}")
+            logging.info(f"Categorical columns: {categorical_columns}")
             
             preprocessor = ColumnTransformer(
                 [

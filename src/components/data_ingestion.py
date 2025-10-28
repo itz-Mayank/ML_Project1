@@ -7,6 +7,7 @@ import pandas as pd
 from src.exception import CustomException
 from src.logger import logging
 from src.components.data_transformation import DataTransformation,DataTransformationConfig
+from src.components.model_trainer import ModelTainer,ModelTrainerConfig
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass # The @dataclass decorator is mainly used to create classes that are primarily used to store data ("data containers") in a clean and concise way.
@@ -26,7 +27,7 @@ class DataIngestion:
         # read the data
         logging.info("Entered the data ingestion method or component.")
         try:
-            df = pd.read_csv('notebook/data/data.csv') # W can read it from mongodb and SQL also.
+            df = pd.read_csv('notebook/data/data.csv') # We can read it from mongodb and SQL also.
             logging.info('Read the dataset as dataframe.')
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
@@ -56,4 +57,7 @@ if __name__ == "__main__":
     train_data,test_data = obj.initiate_data_ingestion()
     
     data_transformation = DataTransformation()
-    data_transformation.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr,_ = data_transformation.initiate_data_transformation(train_data,test_data)
+    
+    modeltrainer = ModelTainer()
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
