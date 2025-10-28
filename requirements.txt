@@ -7,6 +7,6 @@ catboost
 xgboost
 dill
 Flask
-# -e .
+-e .
 # (present in your code as HYPHEN_E_DOT = '-e .') then pip interprets it as: “Install the current directory (.) as a Python package, in editable mode.”
 # You’re seeing .egg-info files because your requirements.txt contains -e ., which tells pip to install your project itself (via setup.py) in editable mode.
