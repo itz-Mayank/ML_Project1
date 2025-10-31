@@ -7,7 +7,7 @@
   "executionRoleArn": "arn:aws:iam::591214163569:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-      "name": "studentperformance-container",
+      "name": "studentperformance",
       "image": "591214163569.dkr.ecr.us-east-1.amazonaws.com/studentperformance:latest",
       "essential": true,
       "portMappings": [
