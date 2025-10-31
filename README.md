@@ -3,7 +3,7 @@
 This project predicts **students’ math performance** based on demographic and academic attributes such as gender, parental education, lunch type, test preparation, and reading/writing scores.  
 The dataset is sourced from [Kaggle – Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams).
 
-### Live on AWS EB: ``` http://studentperformance-env-1.eba-qvxygaz3.us-east-1.elasticbeanstalk.com/ ```
+### Live on AWS EB: [Click Here](http://studentperformance-env-1.eba-qvxygaz3.us-east-1.elasticbeanstalk.com/).
 ---
 
 ## Objective
@@ -169,4 +169,5 @@ python src/components/model_trainer.py
 This project is open-source and available under the **MIT License**.
 
 ---
+
 
